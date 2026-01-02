@@ -57,24 +57,37 @@ int main ()
     //Escreve a frase "CARTA 1"
     printf("CARTA 1: \n");
 
-    //Exibe a letra, que representa o estado, informada pelo usuário
+    //Exibe a letra que representa o estado informada pelo usuário referente a primeira carta
     printf("Estado: %s\n", estado);
 
-    //Exibe o nome da cidade informada pelo usuário
+    //Exibe o nome da cidade informada pelo usuário referente a primeira carta
     printf("Nome da cidade: %s\n", nome_cidade);
+
+    //Exibe o codigo da carta informado pelo usuário referente a primeira carta
     printf("Codigo da carta: %s\n", codigo_carta);
+
+    //Exibe a quantidade populacional informada pelo usuaŕio referente a primeira carta
     printf("População: %d habitantes\n", populacao);
+
+    //Exibie a quantidade de pontos turisticos informada pelo usuário referente a primeira carta
     printf("Pontos turisticos: %d\n", pontos_turisticos);
+
+    //Exibe a area informada pelo usuário referente a primeira carta
     printf("Área: %f km2\n", area);
+
+    //Exibe o PIB informado pelo usuário referente a primeira carta
     printf("PIB: %f bilhões de reais\n", pib);
 
     printf("-------------------------------------------------------------------------------\n");
 
+    //Escreve a frase "Informe os dados da segunda carta"
     printf("Informe os dados da segunda carta:\n");
 
+    //Pede a letra que representa o estado da segunda carta e armazena na variável "estado2"
     printf("Estado: \n");
     scanf("%s", &estado2);
 
+    //Pede o nome da cidade da segunda carta e armazena na variavel ""
     printf("Nome da cidade: \n");
     scanf("%s", &nome_cidade2);
 
