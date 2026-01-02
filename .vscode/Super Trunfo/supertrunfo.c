@@ -60,7 +60,7 @@ int main ()
     //Exibe a letra, que representa o estado, informada pelo usuário
     printf("Estado: %s\n", estado);
 
-    
+    //Exibe o nome da cidade informada pelo usuário
     printf("Nome da cidade: %s\n", nome_cidade);
     printf("Codigo da carta: %s\n", codigo_carta);
     printf("População: %d habitantes\n", populacao);
