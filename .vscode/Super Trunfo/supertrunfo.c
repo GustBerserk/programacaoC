@@ -87,30 +87,43 @@ int main ()
     printf("Estado: \n");
     scanf("%s", &estado2);
 
-    //Pede o nome da cidade da segunda carta e armazena na variavel ""
+    //Pede o nome da cidade da segunda carta e armazena na variavel "nome_cidade2"
     printf("Nome da cidade: \n");
     scanf("%s", &nome_cidade2);
 
+    //Pede o codigo da segunda carta e armazena na variável "codigo_carta2"
     printf("Codigo da carta: \n");
     scanf("%s", &codigo_carta2);
 
+    //Pede a quantidade populacional da segunda cara e armazenza na variável "populacao2"
     printf("População: \n");
     scanf("%d", &populacao2);
 
+    //Pede a quantidade de pontos turisticos da segunda carta e armazenza na variável "pontos_turisticos2"
     printf("Quantidade de pontos turisticos: \n");
     scanf("%d", &pontos_turisticos2);
 
+    //Pede a area da segunda carta e armazena na variavél "area2"
     printf("Area: \n");
     scanf("%f", &area2);
 
+    //Pede o PIB da segunda carta e armazena na variável "pib2"
     printf("PIB:\n");
     scanf("%f", &pib2);
 
+    //Pula duas linhas
     printf("\n\n");
 
+    //Escreve a frase "CARTA 2"
     printf("CARTA 2: \n");
+
+    //Exibe a letra que representa o estado informada pelo usuário referente a segunda carta
     printf("Estado: %s\n", estado2);
+
+    //Exibe o nome da cidade informada pelo usuário referente a segunda carta
     printf("Nome da cidade: %s\n", nome_cidade2);
+
+    //Exibe o codigo da carta informado pelo usuário referente a segunda carta      
     printf("Codigo da carta: %s\n", &codigo_carta2);
     printf("População: %d\n", populacao2);
     printf("Quantidade de pontos turisticos: %d\n", pontos_turisticos2);
