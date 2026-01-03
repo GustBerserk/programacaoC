@@ -125,12 +125,16 @@ int main ()
 
     //Exibe o codigo da carta informado pelo usuário referente a segunda carta      
     printf("Codigo da carta: %s\n", &codigo_carta2);
+
+    //Exibe a quantidade populacional informada pelo usuário referente a segunda carta
     printf("População: %d\n", populacao2);
     printf("Quantidade de pontos turisticos: %d\n", pontos_turisticos2);
-    printf("Area: %f km2\n", area2);
-    printf("PIB: %f bilhões de reais\n", pib2);
-    
 
+    //Exibe a area informada pelo usuário referente a segunda carta
+    printf("Area: %f km2\n", area2);
+
+    //Exibe o PIB informado pelo usuário referente a segunda carta
+    printf("PIB: %f bilhões de reais\n", pib2);
     
     return 0;
     
