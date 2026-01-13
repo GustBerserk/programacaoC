@@ -1,3 +1,14 @@
+/*
+Somar populacao + pontos turisticos + area + pib + densidade + pib_per_capita + PIB
+Verificar qual carta possui maior pontuação
+Verificar qual carta possui mais pontos turisticos
+Verificar qual carta possui maior PIB
+Verificar qual carta possui maior PIB per capita
+Verificar qual carta possui maior area
+Verificar qual carta possui densidade demográfica maior
+*/
+
+
 #include <stdio.h>
 
 int main ()
@@ -13,6 +24,7 @@ int main ()
     double densidade;
     double pib_per_capita;
     double pib_calc;
+    float Poder;
 
     //Variáveis da segunda carta
     char estado2[2];
@@ -25,7 +37,10 @@ int main ()
     double densidade2;
     double pib_per_capita2;
     double pib_calc2;
-    
+    float Poder2;
+
+
+
     //Pede os dados da primeira carta
     printf ("Informe os dados da primeira carta: \n");
     
@@ -57,8 +72,14 @@ int main ()
     printf("PIB: \n");
     scanf ("%lf", &pib);
 
+    //Calcula o PIB em reais
     pib_calc = pib * 1000000000;
+
+    //Calcula a densidade demográfica
     densidade = (long double)populacao / area;
+
+
+    //Calcula o PIB per capita
     pib_per_capita = pib_calc / (long double)populacao;
 
     //Pula duas linhas
@@ -125,8 +146,13 @@ int main ()
     printf("PIB:\n");
     scanf("%lf", &pib2);
 
+    //Calcula o PIB da segunda carta em reais
     pib_calc2 = pib2 * 1000000000;
+
+    //Calcula a densidade demográfica da segunda carta
     densidade2 = (long double)populacao2 / area2;
+
+    //Calcula o PIB per capita da segunda carta
     pib_per_capita2 = pib_calc2 / (long double)populacao2;
 
     //Pula duas linhas
@@ -162,8 +188,26 @@ int main ()
     //Exibe o PIB per capita calculado referente a segunda carta
     printf("PIB per capita: %.2lf reais\n", pib_per_capita2);
 
+    printf("\n\n");
 
-    
+    printf("-------------------------------------------------------------------------------\n");
+
+    //Comparação entre as cartas
+    printf("Comparação entre as cartas: \n");
+ 
+    //Calcula o poder da primeira e da segunda carta
+    Poder = (float )populacao + (float) pontos_turisticos + area + pib + densidade + pib_per_capita;
+    Poder2 = (float)populacao2 + (float)pontos_turisticos2 + area2 + pib2 + densidade2 + pib_per_capita2;
+
+    //Exibe os resultados da comparação entre as cartas
+    printf ("População: %d\n", populacao > populacao2);
+    printf ("Pontos turísticos: %d\n", pontos_turisticos > pontos_turisticos2);
+    printf ("Área: %d\n", area > area2);
+    printf ("PIB: %d\n", pib > pib2);
+    printf ("Densidade demográfica: %d\n", densidade > densidade2);
+    printf ("PIB per capita: %d\n", pib_per_capita > pib_per_capita2);
+    printf ("Poder da carta: %d\n", Poder > Poder2);
+ 
     return 0;
     
 }
