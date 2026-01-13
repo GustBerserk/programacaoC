@@ -1,14 +1,3 @@
-/*
-Somar populacao + pontos turisticos + area + pib + densidade + pib_per_capita + PIB
-Verificar qual carta possui maior pontuação
-Verificar qual carta possui mais pontos turisticos
-Verificar qual carta possui maior PIB
-Verificar qual carta possui maior PIB per capita
-Verificar qual carta possui maior area
-Verificar qual carta possui densidade demográfica maior
-*/
-
-
 #include <stdio.h>
 
 int main ()
