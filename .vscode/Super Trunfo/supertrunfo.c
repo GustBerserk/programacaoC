@@ -29,7 +29,6 @@ int main ()
     float Poder2;
 
 
-
     //Pede os dados da primeira carta
     printf ("Informe os dados da primeira carta: \n");
     
@@ -183,6 +182,9 @@ int main ()
 
     //Comparação entre as cartas
     printf("Comparação entre as cartas: \n");
+    printf("\n");
+    printf("Atributo: Resultado (1 = Carta 1 vence / 0 = Carta 2 vence)\n");
+
  
     //Calcula o poder da primeira e da segunda carta
     Poder = (float )populacao + (float) pontos_turisticos + area + pib + densidade + pib_per_capita;
