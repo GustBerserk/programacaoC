@@ -200,5 +200,12 @@ int main ()
     printf ("Poder da carta: %d\n", Poder > Poder2);
  
     return 0;
-    
+
+    if (Poder > Poder2) {
+        printf("A carta vencedora é a Carta 1\n");
+    } else
+    {
+        printf("A carta vencedora é a Carta 2\n");
+    } 
+    return 0;
 }
